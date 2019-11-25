@@ -3,138 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <title> PartsCom </title>
+<link rel="icon" href="img/favico.ico">
 <style>
+    body{
+    background-image: url("img/fondo.jpeg"); 
+    
+    }
     h1.bat{
     background-color: cornsilk;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 80px; 
-    align:center;
-    
+    align-self:center;
     }
-
     ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
- 
-}
-
-li {
-  float: left;
+  width: 25%;
+  background-color: cornflowerblue;
+  position: fixed;
+  height: 20%;
+  overflow: auto;
 }
 
 li a {
   display: block;
-  text-align: center;
-  padding: 14px 16px;
+  color: #000;
+  padding: 8px 16px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #111;
+li a.active {
+  background-color: #4CAF50;
+  color: white;
 }
-    div.posizioa {
-  position:absolute ;      
-  top: 80px;
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+    div.bat {
+  position:relative ;      
+  left: 70%;
+  top: 100px;      
   right: 80px;
   width: 300px;
   height: 200px;
-  border-style: solid;
+}
+div.bi {
+  position: relative;
+  left:30% ;     
+  top: 0px;
+  right: 80px;
+  width: 300px;
+  height: 200px;
+}
+div.hiru { 
+    position: relative;
+  left:30% ;       
+  top: 300px;
+  right: 80px;
+  width: 300px;
+  height: 200px;
+}
+div.lau {
+    position: relative;
+  left:70% ;      
+  top: 100px;
+  right: 80px;
+  width: 300px;
+  height: 200px;
+}
+div.bost {
+    position: relative;
+  left:30% ;      
+  top: 500px;
+  right: 80px;
+  width: 300px;
+  height: 200px;
+}
+div.sei {
+    position: relative; 
+  left:70% ;      
+  top: 200px;
+  right: 80px;
+  width: 300px;
+  height: 200px;
+}
+p{
+    border-style: solid;
   border-color: green;
 }
-
+table{
+    padding: 8%;
+    width: 100%;
+    border-spacing: 100px;
+}
 </style>
 </head>
+<body>
     <!-- inline CSS -->
-    <h1 class="bat">
-        
-                PARTSCOM
-       
-        
+    <h1 class="bat">   
+            <a href="file:///C:/Users/Eneko/Desktop/html_css-master/Proyecto2/html_css.html">PARTSCOM  </a> 
     </h1>
     <ul>
         <li><a href="html_css.html"> HASIERA </a> </li>
-        <li><a href="https://linustechtips.com/main/blogs/"> JOKO BERRIAK </a></li>
-        <li><a href=""> HARDWARE</a></li>
-        <li><a href=""> GAMEPLAY BIDEOAK</a></li>
-        <li><a href=""> ORDENAGAILUAK MASTER RICEN</a></li>
+        <li><a href="jokoberriak.html"> BIDEO-JOKO BERRIAK </a></li>
+        <li><a href="hardware.html"> HARDWARE</a></li>
+        <li><a href="gameplay.html"> GAMEPLAY BIDEOAK</a></li>
         <li><a href=""> KONTAKTUA</a></li>
-<div>
+    </ul>
+
+<table>
     <div>
-        <div class="posizioa">
-            <a>
+        <div class="bat">
+            <a href="https://www.guru3d.com/files-details/geforce-441-20-whql-driver-download.html">
                 <img src="img/Drivers de Nvidia.jpg">
             </a>
             <p>
                     <h2>
                         Drivers GeForce 441.20 WHQL para Star Wars: Jedi Fallen Order (+SLI) y Stormland – Fixes para RDR2, CS:GO, Q3A y The Surge 2
-    
                     </h2>
+                    <p>
+                        Los controladores Game Ready proporcionan la mejor experiencia de juego posible para todos los lanzamientos nuevos más importantes, incluidos los juegos de realidad virtual. 
+                    </p>
                 </p>
         </div>
-        <div class="">
-            <a>
+        <div class="bi">
+            <a href="https://www.rockstargames.com/reddeadredemption2/pc">
                 <img src="img/RDR2DF.jpg">
             </a>
             <p>
                 <h2>
                         Red Dead Redemption 2 – Video Comparativo y Configuración Equivalente entre PC Vs Xbox One X
                 </h2>
+                <p>
+                        Red Dead Redemption 2 es un videojuego de acción-aventura western, en un mundo abierto y en perspectiva de primera y tercera persona,1​ con componentes para un jugador y multijugador.2​ Fue desarrollado por Rockstar Studios.
+                </p>
             </p>
         </div>
-        <div>
-            <a>
+        <div class="hiru">
+            <a href="https://www.amd.com/en/press-releases/2019-11-07-amd-introduces-world-s-fastest-high-end-desktop-processors-3rd-gen-ryzen">
                 <img src="img/Ryzen-3950X-1.jpg">
             </a>
             <p>
                 <h2>
                         AMD Ryzen Threadripper 3950X, 3960X y 3970X se lanzarán este 25 de Noviembre – Especificaciones y Precios
                 </h2>
+                <p>
+                        La línea Threadripper AMD Ryzen de 3.a generación presenta dos nuevos procesadores basados en la arquitectura central "Zen 2" de 7 nm líder en la industria, con hasta 88 carriles PCIe® 4.0 y 144 MB de caché con una extraordinaria eficiencia energética.
+                </p>
             </p>
         </div>
-        <div>
-                <a>
+        <div class="lau">
+                <a href="https://www.vidaextra.com/rpg/rune-ragnarok-pasa-a-llamarse-rune-ii-concreta-su-lanzamiento-para-verano-epic-games-store">
                     <img src="img/Rune 2 ya disponible.jpg">
                 </a>
                 <p>
                     <h2>
                             Rune II ya disponible en Epic Games Store – Trailer de Lanzamiento
                     </h2>
+                    <p>
+                            El juego está basado en Ragnarok, que muestra el conflicto entre los dioses Odin y Loki y la acumulación de Ragnarok.
+                    </p>
                 </p>
             </div>
-            <div>
-                    <a>
+            <div class="bost">
+                    <a href="https://www.youtube.com/watch?v=mIgGCaIwdXU">
                         <img src="img/Trailer2sonic.jpg">
                     </a>
                     <p>
                         <h2>
                                 Trailer #2 de la Película de Sonic The Hedgehog muestra su Nuevo Diseño
                         </h2>
+                        <p>
+                                Basada en el personaje de Sega, Sonic.
+                        </p>
                     </p>
             </div>
-            <div>
-                    <a>
+            <div class="sei">
+                    <a href="https://www.youtube.com/watch?v=E6UDI-MHqPw">
                         <img src="img/Vr pin pon.jpg">
                     </a>
                     <p>
                         <h2>
                                 VR Ping Pong Pro ya disponible para PCVR y PSVR – Trailer de Lanzamiento
                         </h2>
-                    </p>
-            </div>
-            <div>
-                    <a>
-                        <img src="img/wolf.jpg">
-                    </a>
-                    <p>
-                        <h2>
-                                Wolfenstein: Youngblood – Actualización 1.0.7 agrega Nuevo Tipo de Misión, Habilidades, Enemigos y más; Trailer
-                        </h2>
+                        <p>
+                                VR Ping Pong es un simulador que, gracias a la tecnología VR, y con la ayuda de SteamVR Controllers, trae una mesa de ping pong a su salón.
+                        </p>
                     </p>
             </div>
     </div>
-</div>              
+</div>
+</table>
+<table>
+        <tr>
+                <th><form action="mailto:as3-1-11.19@uni.eus" method="POST" enctype="text/plain"> 
+                    <H2>CORREO ELECTRONICO</H2>
+                    <br> <input type="text">
+                    <br> <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear">
+                </form>
+                 </th>
+                <th></th> 
+                <th><from><H2>DONACIONES</H2> <input type="text"></from></th>
+              </tr>
+</table>           
 </body>
 </html>
