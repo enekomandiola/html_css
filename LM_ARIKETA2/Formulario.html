@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<style>
+        .fondo{
+            background-color: bisque
+        }
+        .flex-container>div {
+  background-color: #f1f1f1;
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+    </style>
+<body class="fondo">
+    <h1 align=center> FORMULARIO DE LA VIDA PERSONAL </h1>
+    <form action="negocioacion.php">
+        <h3> DIME TU GENERO </h3>
+        <input type="radio" name="botones"> HOMBRE <br>
+        <input type="radio" name="botones"> MUJER <br>
+        <input type="radio" name="botones"> OTROS <br>
+        <br>
+          <input type="checkbox" name="gender" value="casa" > CASA <br>
+          <input type="checkbox" name="gender" value="dinero"> DINERO <br>
+          <input type="checkbox" name="gender" value="familia"> FAMILIA <br>
+          <input type="checkbox" name="gender" value="trabajo"> TRABAJO <br>
+          <input type="checkbox" name="gender" value="coche"> COCHE <br>
+          <select name="slectcion">
+            <option name="edad" value="18">18</option>
+            <option name="edad" value="19">19</option>
+            <option name="edad" value="20">20</option>
+            <option name="edad" value="21">21</option>
+            <option name="edad" value="22">22</option>
+            <option name="edad" value="23">23</option>
+            <option name="edad" value="24">24</option>
+            <option name="edad" value="25">25</option>
+            <option name="edad" value="26">26</option>
+            <option name="edad" value="27">27</option>
+            <option name="edad" value="28">28</option>
+            <option name="edad" value="29">29</option>
+            <option name="edad" value="30">30</option>
+            <option name="edad" value="21">31</option>
+          </select>
+          <h3> ESCRIBE UN TEXTO </h3>
+        <br>
+        <div class="flex-container">
+                <div> <img src="../LM_ARIKETA1/img/arbol.jpg"></div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+        <textarea rows="4" cols="50">
+        </textarea>
+        <br>
+          <input type="submit" value="ENVIAR">
+        </form>
+    
+</body>
+</html>
