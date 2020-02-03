@@ -11,14 +11,10 @@
     <input type ="text" id="x">
     <input type ="text" id="y">
     <input type ="text" id="z">
-    <input type="button" onclick="sort_xyz">
-    <input 
+    <input type="button" value="sort" onclick="sort_input()">
+    <p id="resultado"></p>
 </body>
 <script>
-    var x = 0;
-    var y = 5;
-    var z = 1;
-
     //if (x <= y ) {console.log(x +'<='+ y)} else {console.log('no es igual')}
 
     //if(x <= y){
@@ -29,25 +25,60 @@
  //   } else {
  //       console.log ('ez da egia')
  //   }
+
+ /*
+                            --------------(x<=y)-----------
+                            |                              | 
+                      ----(x<=z)----                 ----(y<=z)----
+                      |            |                 |             | 
+               ----(y<=z)----   [z<=x<=y]      ----(x<=z)----  [z<=y<=x]
+               |            |                  |            |
+           [x<=y<=z]    [x<=y<=z]          [y<=x<=z]    [y<=z<=x]
+*/
 function sort_xyz (x,y,z){
+    n1 = 0;
+    n2 = 0;
+    n3 = 0;
+
     if(x<=y) {
+        if(x<=z){
+            console.log(y<=z);
             if(y<=z){
-                console.log(x+"<="+y+"<="+z)
+                console.log(x+"<="+y+"<="+z);
+                n1 = x; n2 = y; n3 =z;
             } else {
-                    if(z<=x){
-                        console.log(y+"<="+z+"<="+x)
-                    } else{
-                        console.log(x+"<="+z+"<="+x)
-                    }
+                console.log(x+"<="+y+"<="+z);
+                n1 = x; n2 = y; n3 =z;
             }
+        } else {
+            console.log(z+"<="+x+"<="+y);
+                n1 = z; n2 = x; n3 =y;
+        }
     } else {
-            if(z>=y){
-                console.log(z+"<="+y+">="+x)
+        if(y<=z){
+                if(x<=z){
+                    console.log(y+"<="+x+"<="+z);
+                    n1 = y; n2 = x; n3 =z;
+                } else {
+                    console.log(y+"<="+z+"<="+x);
+                    n1 = y; n2 = z; n3 =x;
+                }
             } else {
-                console.log(z+"<="+y+"<="+x)
+                console.log(z+"<="+y+"<="+x);
+                n1 = z; n2 = y; n3 =x;
             }
+        }
+        console.log(n1 +"<="+n2+"<="+n3);
+        return { x:n1,y:n2,z:n3};
     }
-    return x+"<="+y+"<="+z; 
+function sort_input(){
+    x = parseInt(document.getElementById("x").value);
+    y = parseInt(document.getElementById("y").value);
+    z = parseInt(document.getElementById("z").value);
+
+    sorted_nums = sort_xyz (x,y,z);
+    console.log(sorted_nums);
+    document.getElementById("resultado").innerHTML = sorted_nums.x+"<="+sorted_nums.y+"<="+sorted_nums.z;
 }
 
 </script>
