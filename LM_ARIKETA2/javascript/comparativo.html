@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <input type ="text" id="x">
+    <input type ="text" id="y">
+    <input type ="text" id="z">
+    <input type="button" onclick="sort_xyz">
+    <input 
+</body>
+<script>
+    var x = 0;
+    var y = 5;
+    var z = 1;
+
+    //if (x <= y ) {console.log(x +'<='+ y)} else {console.log('no es igual')}
+
+    //if(x <= y){
+ //       if( z>=y){ 
+ //           console.log('egia')
+ //       } else { 
+ //           console.log('ez da egia')}
+ //   } else {
+ //       console.log ('ez da egia')
+ //   }
+function sort_xyz (x,y,z){
+    if(x<=y) {
+            if(y<=z){
+                console.log(x+"<="+y+"<="+z)
+            } else {
+                    if(z<=x){
+                        console.log(y+"<="+z+"<="+x)
+                    } else{
+                        console.log(x+"<="+z+"<="+x)
+                    }
+            }
+    } else {
+            if(z>=y){
+                console.log(z+"<="+y+">="+x)
+            } else {
+                console.log(z+"<="+y+"<="+x)
+            }
+    }
+    return x+"<="+y+"<="+z; 
+}
+
+</script>
+</html>    

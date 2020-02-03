@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .cuadrado{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+<div onmouseover="cuadradooG()" id="cuadrado1" class="cuadrado"></div>
+   <script>
+   function cuadradooG(){
+        c1.style.visibility = "hidden"
+   }
+
+   c1 = document.getElementById("cuadrado1")
+   c1.addEventListener("klikatu",cuadradooG)
+     
+   </script> 
+    
+</body>
+</html>
