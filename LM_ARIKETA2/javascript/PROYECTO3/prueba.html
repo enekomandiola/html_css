@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="mostrar_cartas()">ON</button>
+
+<img id="carta_as" src="img/as.png" style="width:100px">
+<img id="carta_K" src="img/K.png" style="width:100px">
+<img id="carta_Q" src="img/Q.png" style="width:100px">
+
+<button onclick="ocultar_cartas()">OFF</button>
+
+<script>
+    function ocultar_cartas() {
+        document.getElementById('carta_as').src='img/reverso.png';
+        document.getElementById('carta_K').src='img/reverso.png';
+        document.getElementById('carta_Q').src='img/reverso.png';
+    }
+    
+    function mostrar_cartas() {
+        document.getElementById('carta_as').src='img/as.png';
+        document.getElementById('carta_K').src='img/K.png';
+        document.getElementById('carta_Q').src='img/Q.png';
+    }
+    
+</script>
+
+
+</body>
+</html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

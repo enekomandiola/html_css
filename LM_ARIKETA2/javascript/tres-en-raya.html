@@ -91,8 +91,59 @@ function tablero_print(){
     document.getElementById("c8").innerHTML=tablero [2,2];
 }
 
-function poner_ficha (x,y){
-    if x
+function poner_ficha(x,y){
+    if (game_over()){
+        console.log("GAME OVER");
+    } else {
+        // casilla ocupada?
+        if (tablero[x][y] != 0) {
+            console.log("casilla ocupada");
+        } else {
+            tablero[x][y] = turno;
+            if (turno==1)
+                turno=2;
+            else
+                turno=1;
+        }
+    }
+    // 
+    tablero_print();    
+}
+
+function ha_ganado(jugador){
+    
+    if ((tablero[0][0]==jugador && tablero[0][1]==jugador && tablero[0][2]==jugador) || //line1
+        (tablero[1][0]==jugador && tablero[1][1]==jugador && tablero[1][2]==jugador) || //line2
+        (tablero[2][0]==jugador && tablero[2][1]==jugador && tablero[2][2]==jugador) || //line3
+        (tablero[0][0]==jugador && tablero[1][1]==jugador && tablero[2][2]==jugador) || //diagonal1
+        (tablero[0][2]==jugador && tablero[1][1]==jugador && tablero[2][0]==jugador) || //diagonal2
+        (tablero[0][0]==jugador && tablero[1][0]==jugador && tablero[2][0]==jugador) || //col1
+        (tablero[0][1]==jugador && tablero[1][1]==jugador && tablero[2][1]==jugador) || //col2
+        (tablero[0][2]==jugador && tablero[1][2]==jugador && tablero[2][2]==jugador)    //col3
+    ){
+        return true;
+    } else {
+        return false;
+    }
+    
+}
+
+function todo_ocupado(){
+    for (var i=0; i<3; i++)
+        for (var j=0; j<3; j++)
+            if (tablero[i][j]==0)
+                return false;
+
+    return true;
+}
+
+
+function game_over() {
+    if (ha_ganado(1) || ha_ganado(2) || todo_ocupado()) {
+        return true
+    } else {
+        return false
+    }
 }
 
 
