@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> SOLITARIO </title>
+<link rel="icon" href="img/carta.png">
+<style>
+    body{
+    background-image: url("img/fondo.jpeg"); 
+    }
+</style>
+</head>
+<body>
+   <!-- CARTAS BASTOS-->
+<img id="carta_1basto" src="img/BASTO/2debasto.jpg" style="width:100px"></a>
+<img id="carta_2basto" src="img/BASTO/3debasto.jpg" style="width:100px"></a>
+<a onclick="basto1()"><img id="carta_3basto" src="img/BASTO/1debasto.jpg" style="width:100px"></a>
+<img id="carta_4basto" src="img/BASTO/6debasto.jpg" style="width:100px"></a>
+<a onclick="basto2()"><img id="carta_5basto" src="img/BASTO/4debasto.jpg" style="width:100px"></a>
+<img id="carta_6basto" src="img/BASTO/5debasto.jpg" style="width:100px"></a> 
+<img id="carta_7basto" src="img/BASTO/12debasto.jpg" style="width:100px"></a> 
+<a onclick="basto3()"><img id="carta_10basto" src="img/BASTO/7debasto.jpg " style="width:100px"></a>
+<img id="carta_11basto" src="img/BASTO/10debasto.jpg" style="width:100px"></a>
+<img id="carta_12basto" src="img/BASTO/11debasto.jpg" style="width:100px"></a>
+<p></p>
+<!-- CARTAS ESPADA-->
+<img id="carta_1espada" src="img/ESPADA/3deespada.jpg" style="width:100px">
+<a onclick="espata1()"><img id="carta_2espada" src="img/ESPADA/1deespada.jpg" style="width:100px"></a>
+<img id="carta_3espada" src="img/ESPADA/5deespada.jpg" style="width:100px">
+<img id="carta_4espada" src="img/ESPADA/2deespada.jpg" style="width:100px">
+<img id="carta_5espada" src="img/ESPADA/10deespada.jpg" style="width:100px">  
+<img id="carta_6espada" src="img/ESPADA/12deespada.jpg" style="width:100px"> 
+<a onclick="espata2()"><img id="carta_7espada" src="img/ESPADA/4deespada.jpg" style="width:100px"></a> 
+<a onclick="espata3()"><img id="carta_10espada" src="img/ESPADA/7deespada.jpg" style="width:100px"></a> 
+<img id="carta_11espada" src="img/ESPADA/6deespada.jpg" style="width:100px"> 
+<img id="carta_12espada" src="img/ESPADA/11deespada.jpg" style="width:100px">
+<p></p> 
+<!-- CARTAS COPAS -->
+<img id="carta_1copas" src="img/COPAS/3decopa.jpg" style="width:100px">
+<a onclick="copa1()"><img id="carta_2copas" src="img/COPAS/1decopa.jpg" style="width:100px"></a>
+<img id="carta_3copas" src="img/COPAS/5decopa.jpg" style="width:100px">
+<img id="carta_4copas" src="img/COPAS/2decopa.jpg" style="width:100px">
+<a onclick="copa2()"><img id="carta_5copas" src="img/COPAS/4decopas.jpg" style="width:100px"></a>  
+<img id="carta_6copas" src="img/COPAS/10decopa.jpg" style="width:100px"> 
+<a onclick="copa3()"><img id="carta_7copas" src="img/COPAS/6decopa.jpg" style="width:100px"></a> 
+<a onclick="copa4()"><img id="carta_10copas" src="img/COPAS/7decopa.jpg" style="width:100px"></a>
+<img id="carta_11copas" src="img/COPAS/12decopa.jpg" style="width:100px"> 
+<img id="carta_12copas" src="img/COPAS/11decopa.jpg" style="width:100px">
+<!-- CARTAS ORO-->
+<P></P>
+<img id="carta_1oro" src="img/ORO/2deoro.jpg" style="width:100px">
+<img id="carta_2oro" src="img/ORO/3deoro.jpg" style="width:100px">
+<a onclick="oro1()"><img id="carta_3oro" src="img/ORO/1deoro.jpg" style="width:100px"></a>
+<img id="carta_4oro" src="img/ORO/11deoro.jpg" style="width:100px">
+<img id="carta_5oro" src="img/ORO/5deoro.jpg" style="width:100px">  
+<a onclick="oro2()"><img id="carta_6oro" src="img/ORO/4deoro.jpg" style="width:100px"></a> 
+<img id="carta_7oro" src="img/ORO/6deoro.jpg" style="width:100px"> 
+<img id="carta_10oro" src="img/ORO/12deoro.jpg" style="width:100px"> 
+<img id="carta_11oro" src="img/ORO/10deoro.jpg" style="width:100px"> 
+<a onclick="oro3()"><img id="carta_12oro" src="img/ORO/7deoro.jpg" style="width:100px"></a>
+<p></p>
+
+<a onclick="egiaztatu(pozizioa1,pozizioa2,pozizioa3,pozizioa4)"><button>EGIAZTATU </button></a>
+</body>
+<script>
+var pozizioa1 = ["img/BASTO/1debasto.jpg","img/BASTO/2debasto.jpg",
+                "img/BASTO/3debasto.jpg","img/BASTO/4debasto.jpg",
+                "img/BASTO/5debasto.jpg","img/BASTO/6debasto.jpg",
+                "img/BASTO/7debasto.jpg","img/BASTO/10debasto.jpg",
+                "img/BASTO/11debasto.jpg","img/BASTO/12debasto.jpg"];
+
+var pozizioa2 =["img/ESPADA/1deespada.jpg","img/ESPADA/2deespada.jpg",
+                "img/ESPADA/3deespada.jpg","img/ESPADA/4deespada.jpg",
+                "img/ESPADA/5deespada.jpg","img/ESPADA/6deespada.jpg",
+                "img/ESPADA/7deespada.jpg","img/ESPADA/10deespada.jpg",
+                "img/ESPADA/11deespada.jpg","img/ESPADA/12deespada.jpg"];
+
+var pozizioa3 =["img/COPAS/1decopa.jpg","img/COPAS/2decopa.jpg",
+                "img/COPAS/3decopa.jpg","img/COPAS/4decopas.jpg",
+                "img/COPAS/5decopa.jpg","img/COPAS/6decopa.jpg",
+                "img/COPAS/7decopa.jpg","img/COPAS/10decopa.jpg",
+                "img/COPAS/11decopa.jpg","img/COPAS/12decopa.jpg"];
+
+var pozizioa4 =["img/ORO/1deoro.jpg","img/ORO/2deoro.jpg",
+                "img/ORO/3deoro.jpg","img/ORO/4deoro.jpg",
+                "img/ORO/5deoro.jpg","img/ORO/6deoro.jpg",
+                "img/ORO/7deoro.jpg","img/ORO/10deoro.jpg",
+                "img/ORO/11deoro.jpg","img/ORO/12deoro.jpg"];
+/*BASTUAK*/
+function basto1() {
+    document.getElementById('carta_1basto').src= pozizioa1[0];
+    document.getElementById('carta_2basto').src= pozizioa1[1];
+    document.getElementById('carta_3basto').src= pozizioa1[2];    
+}
+function basto2(){
+    document.getElementById('carta_4basto').src= pozizioa1[3];
+    document.getElementById('carta_5basto').src= pozizioa1[4];
+    document.getElementById('carta_6basto').src= pozizioa1[5];
+}
+function basto3(){
+    document.getElementById('carta_7basto').src= pozizioa1[6];
+    document.getElementById('carta_10basto').src= pozizioa1[7];
+    document.getElementById('carta_11basto').src= pozizioa1[8];
+    document.getElementById('carta_12basto').src= pozizioa1[9];
+}
+/* ESPATAK */
+
+function espata1() {
+    document.getElementById('carta_1espada').src= pozizioa2[0];
+    document.getElementById('carta_2espada').src= pozizioa2[1];
+    document.getElementById('carta_3espada').src= pozizioa2[2];
+    document.getElementById('carta_4espada').src= pozizioa2[4];
+}
+
+function espata2() {
+    document.getElementById('carta_4espada').src= pozizioa2[3];
+    document.getElementById('carta_5espada').src= pozizioa2[4];
+    document.getElementById('carta_6espada').src= pozizioa2[5];
+    document.getElementById('carta_7espada').src= pozizioa2[7];
+}
+function espata3() {
+    document.getElementById('carta_7espada').src= pozizioa2[6];
+    document.getElementById('carta_10espada').src= pozizioa2[7];
+    document.getElementById('carta_11espada').src= pozizioa2[8];
+    document.getElementById('carta_12espada').src= pozizioa2[9];
+}
+
+/* KOPAK */
+
+function copa1() {
+    document.getElementById('carta_1copas').src= pozizioa3[0];
+    document.getElementById('carta_2copas').src= pozizioa3[1];
+    document.getElementById('carta_3copas').src= pozizioa3[2];
+    document.getElementById('carta_4copas').src= pozizioa3[4];
+}
+function copa2() {
+    document.getElementById('carta_4copas').src= pozizioa3[3];
+    document.getElementById('carta_5copas').src= pozizioa3[4];
+    
+}
+function copa3() {
+    document.getElementById('carta_6copas').src= pozizioa3[5];
+    document.getElementById('carta_7copas').src= pozizioa3[7];
+    
+}
+function copa4() {
+    document.getElementById('carta_7copas').src= pozizioa3[6];
+    document.getElementById('carta_10copas').src= pozizioa3[7];
+    document.getElementById('carta_10copas').src= pozizioa3[7];
+    document.getElementById('carta_11copas').src= pozizioa3[8];
+    document.getElementById('carta_12copas').src= pozizioa3[9];
+}
+
+/* URREA */
+function oro1() {
+    document.getElementById('carta_1oro').src= pozizioa4[0];
+    document.getElementById('carta_2oro').src= pozizioa4[1];
+    document.getElementById('carta_3oro').src= pozizioa4[2];
+}
+function oro2() {
+    document.getElementById('carta_4oro').src= pozizioa4[3];
+    document.getElementById('carta_5oro').src= pozizioa4[4];
+    document.getElementById('carta_6oro').src= pozizioa4[5];
+    document.getElementById('carta_7oro').src= pozizioa4[8];
+
+}
+function oro3() {
+    document.getElementById('carta_7oro').src= pozizioa4[6];
+    document.getElementById('carta_10oro').src= pozizioa4[7];
+    document.getElementById('carta_11oro').src= pozizioa4[8];
+    document.getElementById('carta_12oro').src= pozizioa4[9];
+}
+
+function egiaztatu(pozizioa1,pozizioa2,pozizioa3,pozizioa4){
+    if ((pozizioa1 == pozizioa2 && pozizioa2 == pozizioa1) ||
+        (pozizioa2 == pozizioa3 && pozizioa3 == pozizioa2) ||
+        (pozizioa3 == pozizioa4 && pozizioa4 == pozizioa3) 
+    ){
+        document.write('ZAIATU BARRIRO')
+    } else {
+        document.write('ZORIONAK!!!')
+    }
+}
+</script>
+</html>

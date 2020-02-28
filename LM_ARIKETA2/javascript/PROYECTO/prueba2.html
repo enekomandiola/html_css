@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> SOLITARIO </title>
+<link rel="icon" href="img/carta.png">
+<style>
+    body{
+    background-image: url("img/fondo.jpeg"); 
+    }
+</style>
+</head>
+<body>
+    <img id="carta_1oro" src="img/ORO/2deoro.jpg" style="width:100px">
+    <img id="carta_2oro" src="img/ORO/3deoro.jpg" style="width:100px">
+    <a onclick="oro1()"><img id="carta_3oro" src="img/ORO/1deoro.jpg" style="width:100px"></a>
+    <img id="carta_4oro" src="img/ORO/11deoro.jpg" style="width:100px">
+    <img id="carta_5oro" src="img/ORO/5deoro.jpg" style="width:100px">  
+    <a onclick="oro2()"><img id="carta_6oro" src="img/ORO/4deoro.jpg" style="width:100px"></a> 
+    <img id="carta_7oro" src="img/ORO/6deoro.jpg" style="width:100px"> 
+    <img id="carta_10oro" src="img/ORO/12deoro.jpg" style="width:100px"> 
+    <img id="carta_11oro" src="img/ORO/10deoro.jpg" style="width:100px"> 
+    <a onclick="oro3()"><img id="carta_12oro" src="img/ORO/7deoro.jpg" style="width:100px"></a>
+    <a onclick="egiaztatu(pozizioa4)"><button>EGIAZTATU </button></a>
+</body>
+<script>
+var pozizioa4 =["img/ORO/1deoro.jpg","img/ORO/2deoro.jpg",
+                "img/ORO/3deoro.jpg","img/ORO/4deoro.jpg",
+                "img/ORO/5deoro.jpg","img/ORO/6deoro.jpg",
+                "img/ORO/7deoro.jpg","img/ORO/10deoro.jpg",
+                "img/ORO/11deoro.jpg","img/ORO/12deoro.jpg"];
+
+function oro1() {
+    document.getElementById('carta_1oro').src= pozizioa4[0];
+    document.getElementById('carta_2oro').src= pozizioa4[1];
+    document.getElementById('carta_3oro').src= pozizioa4[2];
+}
+function oro2() {
+    document.getElementById('carta_4oro').src= pozizioa4[3];
+    document.getElementById('carta_5oro').src= pozizioa4[4];
+    document.getElementById('carta_6oro').src= pozizioa4[5];
+}
+function oro3() {
+    document.getElementById('carta_7oro').src= pozizioa4[6];
+    document.getElementById('carta_10oro').src= pozizioa4[7];
+    document.getElementById('carta_11oro').src= pozizioa4[8];
+    document.getElementById('carta_12oro').src= pozizioa4[9];
+}
+
+function egiaztatu(pozizioa4){
+    if ((pozizioa4 ==["img/ORO/1deoro.jpg","img/ORO/2deoro.jpg",
+                "img/ORO/3deoro.jpg","img/ORO/4deoro.jpg",
+                "img/ORO/5deoro.jpg","img/ORO/6deoro.jpg",
+                "img/ORO/7deoro.jpg","img/ORO/10deoro.jpg",
+                "img/ORO/11deoro.jpg","img/ORO/12deoro.jpg"])
+    ){
+        document.write('ZORIONAK!!!')
+    } else {((pozizioa4)
+    )
+        document.write('ZAIATU BARRIRO')
+    }
+}
+</script>
+</html>

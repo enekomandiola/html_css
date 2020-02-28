@@ -1,0 +1,49 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> SOLITARIO </title>
+<link rel="icon" href="img/carta.png">
+<style>
+    body{
+    background-image: url("img/fondo.jpeg"); 
+    }
+</style>
+</head>
+<body>
+   <!-- CARTAS BASTOS-->
+   <a onclick="basto()"><img id="carta_2basto" src="img/BASTO/2debasto.jpg" style="width:100px"></a>
+   <a onclick="basto()"><img id="carta_3basto" src="img/BASTO/3debasto.jpg" style="width:100px"></a>
+   <a onclick="basto1()"><img id="carta_1basto" src="img/BASTO/1debasto.jpg" style="width:100px"></a>
+   <a onclick="basto()"><img id="carta_6basto" src="img/BASTO/6debasto.jpg" style="width:100px"></a>
+   <a onclick="basto()"><img id="carta_4basto" src="img/BASTO/4debasto.jpg" style="width:100px"></a>
+   <a onclick="basto()"><img id="carta_5basto" src="img/BASTO/5debasto.jpg" style="width:100px"></a> 
+   <a onclick="basto()"><img id="carta_12basto" src="img/BASTO/12debasto.jpg" style="width:100px"></a> 
+   <a onclick="basto()"><img id="carta_7basto" src="img/BASTO/7debasto.jpg " style="width:100px"></a>
+   <a onclick="basto()"><img id="carta_10basto" src="img/BASTO/10debasto.jpg" style="width:100px"></a>
+   <a onclick="basto()"><img id="carta_11basto" src="img/BASTO/11debasto.jpg" style="width:100px"></a>
+   <p></p>
+</body>
+<script>
+var pozizioa1 = ["img/BASTO/2debasto.jpg","img/BASTO/3debasto.jpg",
+                "img/BASTO/1debasto.jpg","img/BASTO/6debasto.jpg",
+                "img/BASTO/4debasto.jpg","img/BASTO/5debasto.jpg",
+                "img/BASTO/12debasto.jpg","img/BASTO/7debasto.jpg",
+                "img/BASTO/10debasto.jpg","img/BASTO/11debasto.jpg"];
+
+function basto1() {
+    document.getElementById('carta_1basto').src= pozizioa1[1];
+    document.getElementById('carta_2basto').src= pozizioa1[2];
+    document.getElementById('carta_3basto').src= pozizioa1[0];
+}
+
+function basto2() {
+    document.getElementById('carta_1basto').src= pozizioa1[1];
+    document.getElementById('carta_2basto').src= pozizioa1[2];
+    document.getElementById('carta_3basto').src= pozizioa1[0];
+}
+
+
+</script>
+</html>
