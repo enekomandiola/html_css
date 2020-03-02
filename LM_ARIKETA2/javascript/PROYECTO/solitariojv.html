@@ -63,24 +63,28 @@
 <a onclick="egiaztatu(pozizioa1,pozizioa2,pozizioa3,pozizioa4)"><button>EGIAZTATU </button></a>
 </body>
 <script>
+// Lehengoko pozizioko karten bariabiliden ordena
 var pozizioa1 = ["img/BASTO/1debasto.jpg","img/BASTO/2debasto.jpg",
                 "img/BASTO/3debasto.jpg","img/BASTO/4debasto.jpg",
                 "img/BASTO/5debasto.jpg","img/BASTO/6debasto.jpg",
                 "img/BASTO/7debasto.jpg","img/BASTO/10debasto.jpg",
                 "img/BASTO/11debasto.jpg","img/BASTO/12debasto.jpg"];
 
+// Bigarreneko pozizioko karten bariabiliden ordena
 var pozizioa2 =["img/ESPADA/1deespada.jpg","img/ESPADA/2deespada.jpg",
                 "img/ESPADA/3deespada.jpg","img/ESPADA/4deespada.jpg",
                 "img/ESPADA/5deespada.jpg","img/ESPADA/6deespada.jpg",
                 "img/ESPADA/7deespada.jpg","img/ESPADA/10deespada.jpg",
                 "img/ESPADA/11deespada.jpg","img/ESPADA/12deespada.jpg"];
 
+// Hirugarreneko pozizioko karten bariabiliden ordena
 var pozizioa3 =["img/COPAS/1decopa.jpg","img/COPAS/2decopa.jpg",
                 "img/COPAS/3decopa.jpg","img/COPAS/4decopas.jpg",
                 "img/COPAS/5decopa.jpg","img/COPAS/6decopa.jpg",
                 "img/COPAS/7decopa.jpg","img/COPAS/10decopa.jpg",
                 "img/COPAS/11decopa.jpg","img/COPAS/12decopa.jpg"];
 
+// Lugarreneko pozizioko karten bariabiliden ordena
 var pozizioa4 =["img/ORO/1deoro.jpg","img/ORO/2deoro.jpg",
                 "img/ORO/3deoro.jpg","img/ORO/4deoro.jpg",
                 "img/ORO/5deoro.jpg","img/ORO/6deoro.jpg",
@@ -171,6 +175,7 @@ function oro3() {
     document.getElementById('carta_12oro').src= pozizioa4[9];
 }
 
+// ZORIONEN FUNTZIOA
 function egiaztatu(pozizioa1,pozizioa2,pozizioa3,pozizioa4){
     if ((pozizioa1 == pozizioa2 && pozizioa2 == pozizioa1) ||
         (pozizioa2 == pozizioa3 && pozizioa3 == pozizioa2) ||
