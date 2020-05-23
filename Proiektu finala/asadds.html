@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="icon" href="img/casita.jpg">
+        <link rel="stylesheet" href="actividad.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+    
+        <title>Ruta Atalaya</title>
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="imagenmovi.js"></script>
+      </head>
+</head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.imagen {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .imagen {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .imagen {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div>
+  <div class="imagen">
+  <div class="gallery">
+    <a target="_blank" href="img/TALAIA/IMG-20200504-WA0025.jpg" >
+      <img src="img/TALAIA/IMG-20200504-WA0025.jpg" alt="Cinque Terre" width="500" height="300">
+    </a>
+      <div>
+          <p class="bi">Mirando a Ogoño</p>
+      </div>
+  </div>
+</div>
+<div class="imagen">
+  <div class="gallery">
+    <a target="_blank" href="img/TALAIA/IMG-20200504-WA0003.jpg">
+      <img src="img/TALAIA/IMG-20200504-WA0003.jpg" alt="Cinque Terre" width="500" height="300">
+    </a>
+    <div>
+      <p class="bi">Merendero de Atalaya</p>
+  </div>
+  </div>
+</div>
+<div class="imagen">
+  <div class="gallery">
+    <a target="_blank" href="img/TALAIA/IMG-20200504-WA0007.jpg">
+      <img src="img/TALAIA/IMG-20200504-WA0007.jpg" alt="Cinque Terre" width="500" height="300">
+    </a>
+    <div>
+      <p class="bi">Cumbre Otoio</p>
+  </div>
+  </div>
+</div>
+<div class="imagen">
+  <div class="gallery">
+    <a target="_blank" href="img/TALAIA/IMG-20200504-WA0006.jpg">
+      <img src="img/TALAIA/IMG-20200504-WA0006.jpg" alt="Cinque Terre" width="500" height="300">
+    </a>
+    <div>
+      <p class="bi">Mirando a Lekeitio</p>
+  </div>
+  </div>
+</div>
+</div>
+<div class="container">
+  <!-- BOTON OROGRAFIA -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" >
+OROGRAFIA
+  </button>
+    <!-- Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">OROGRAFIA</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- body -->
+      <div class="modal-body">
+          Cumbre de la costa en la zona de Lekeitio e Ispaster. Su vertiente septentrional se halla constituida por acantilados que caen directamente sobre el mar Cantábrico, 
+          mientras que en su zona W quedan algunas ensenadas poco conocidas como la de la playa de Ogeia, que no es de arena sino rocosa. 
+          La cima de Otoio se halla rematada por un repetidor que emerge entre los pinares.
+      </div>
+      <!-- footer -->
+      <div class="modal-footer">
+        <a href="https://www.google.es/maps/@43.3688446,-2.5300434,1289m/data=!3m1!1e3?hl=es&authuser=0" class="btn btn-danger" >GOOGLE MAPS</a>
+        <button  hr type="button" class="btn btn-danger" data-dismiss="modal">CERRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+body{
+    /* fondo imagen*/
+background-image: url("fondotalaya.jpg");
+/*posicion de la foto */
+width: 100%;
+height: 100%;
+/*centrar imagen*/
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+font-family: 'Open Sans', sans-serif ;
+}
+
+h1.bat{
+    background-color: silver;
+    text-align: center;
+    font-family:cursive;
+    font-size: 80px; 
+    align-self:center;
+}
+h1.bi{
+  color: coral;
+}
+div.bat {
+    width:85%;
+    height:80%;
+    margin: auto;
+    background-image: url("fondocumbreotoio.jpg");
+}
+
+div.bi{
+  padding: 15px;
+  text-align: center;
+}
+div.hiru{
+  float: none;
+}
+
+img {
+    cursor:pointer;
+}
+p.bat{
+    color: red;
+}
+p.bi{
+  background-color: silver;
+}
+
+.imagen{
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .imagen {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .imagen {
+      width: 100%;
+    }
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  div.gallery {
+    border: 1px solid #ccc;
+  }

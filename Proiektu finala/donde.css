@@ -1,0 +1,78 @@
+body{
+    /* fondo imagen*/
+background-image: url("fondodonde.jpg");
+/*posicion de la foto */
+width: 100%;
+height: 100%;
+/*centrar imagen*/
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+font-family: 'Open Sans', sans-serif ;
+}
+h1.bat{
+    background-color: lightblue;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px; 
+    align-self:center;
+}
+p.bat{
+    font-family: serif;
+}
+div.bat {
+    margin: 50px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    width:50%; 
+    height:50%;
+  }
+  .imagen{
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .imagen {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .imagen {
+      width: 100%;
+    }
+  }  
+  div.gallery img {
+    margin:0 4px;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+h3.bat{
+  color: coral;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3.bi{
+  text-align: auto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 50px;
+}
+div.bi {
+  margin: 50px;
+  opacity: 0.8;
+  width:50%; 
+  height:50%;
+}
+h4.bat{
+  text-align: auto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
