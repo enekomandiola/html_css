@@ -17,11 +17,12 @@ li {
   background-color: cadetblue;
 }
 
-li a {
+li a:hover:not(.active) {
   display: block;
   color:black;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #111;
 }
 
 /* Create two columns/boxes that floats next to each other */
