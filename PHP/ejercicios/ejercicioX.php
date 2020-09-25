@@ -28,7 +28,13 @@
     <tbody>
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+  $vidas = 5;
+  $nombre = "Eneko";
+
+  print '<p>Hola' .$nombre. '</p>';
+  print "<p>Tienes $vidas vidas '$nombre' muerte. </p>";
+
+  print "<p>LA VARIABLE SE \"ESPECIFICA\" ASI \$nombre. </p>";
 
 ?>
     </tbody>
