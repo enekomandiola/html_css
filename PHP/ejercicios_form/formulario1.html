@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FORMULARIO1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+<form action="responder.php" method=POST>
+
+    <label for="tamano">Tamaño</label><input type="text" name="tamano">
+
+    <p><label for="grosor_del_borde">Grosor del borde</label><input type="text" name="grosor_del_borde"></p>
+
+    <p><label for="colores"></label>
+        <select name="colores" size="2" multiple>
+        <option value="red" >Rojo</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+        </select></p>
+
+    <input type="submit" name="calcular" value="Calcular">
+
+
+</form>
+</body>
+</html>

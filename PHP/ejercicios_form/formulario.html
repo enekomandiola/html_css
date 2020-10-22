@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Formulario
+
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="respuestas.php" method="GET">
+        <!--Para introducir texto-->
+        <label for="nombre">Nombre</label><input type="text" name="nombre">
+
+        <!--Checkbox-->
+        <input type="checkbox" name="aceptar"><label for="aceptar">Aceptar los terminos</label>
+
+        <!--Radio button-->
+        <p>Ciclos:</p>
+        <p><input type="radio" name="Ciclos" value="ASIR"><label for="ciclos">Adminitracion de SIstemas Inofrmaticos y redes</label></p>
+
+        <p><input type="radio" name="Ciclos" value="ASIR"><label for="ciclos">Desarrolo de Aplicaciones Web</label></p>
+
+        <p><input type="radio" name="Ciclos" value="ASIR"><label for="ciclos">Desarrolo de Aplicaciones Multiplataforma</label></p>
+        <input type="submit" name="enviar" value ="enviar">
+
+        <!--Meñu despegable-->
+        <p><label for="intereses"></label>
+            <select name="interses" size="3" multiple>
+            <option>Musica</option>
+            <option>Deporte</option>
+            <option>Videojuegos</option>
+            </select></p>
+
+        <!--Menu scroll-->
+        <p><label for="intereses2"></label>
+            <select name="intereses2[]" size="3" multiple>
+            <option>Musica</option>
+            <option>Deporte</option>
+            <option>Videojuegos</option>
+            </select></p>    
+        <!--Elemento oculto-->
+        <input type="hidden" name="id" value="5454">
+
+        <!--Imagen-->
+        <input type="imagen" name="dado" src="../img/dados/1.svg">
+        
+    </form>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
