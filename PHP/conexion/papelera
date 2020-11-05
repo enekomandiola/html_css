@@ -1,0 +1,88 @@
+<?php
+    include_once 'conexion.php';
+
+    /** SELECT DE LA BASE DE DATOS */
+    $sql_lectura = "SELECT * FROM colores"; //Sentencia SQL que queremos ejecutar
+
+    $sentencia_select = $gbd->prepare($sql_lectura);
+        //$gbd guarda la conexion creada en el archivo conexion.php
+        //$sentancia_select sera usada para ejecutar la sentencia
+
+    $sentencia_select->execute();
+//para que se ejecute la sentencia que hemos preparado
+    $resultado = $sentencia_select->fetchAll();
+//fetchall nos devuelte una matriz con el resultado de la snetencia
+
+if($_GET){
+    $id = $_GET['id'];
+    $sql_selectid = "SELECT * FROM colore WHERE id = ?";
+
+    $sentencia_sql = $gbd->prepare($sql_selectid);
+    $sentencia_sql->execute(array($id));
+
+    $resultado_id = $sentencia_sql->fetch();
+
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexion con Base de Datos</title>
+</head>
+<body>
+    <h1> Ejercicio con base de datos </h1>
+
+    <!--
+        Aqui añadiremos el contenido partiendo del resultado de la
+        -->
+    <footer>
+    <p> Escriba aqui su nombre </p>
+    </footer>
+    <table>
+        <?php
+            foreach($resultado as &$dato) //de la matriz del resultado toma un dato (una tupla)
+            {
+                print "<tr><td>$dato[color]</td></tr>";
+            }
+        ?>
+    </table>
+    <table>
+    <?php
+        foreach($resultado as &$color) //de la matriz del resultado toma un dato (una tupla)
+
+        {
+                print "<tr style=\"background-color:$dato[color]\">
+                    <td>$dato[color]<td>
+                    <td> $dato[descripcion]</td>
+                    <td><a href=index.php?id$dato[id]>&#128221</a></td>
+                    <tr>";
+        }
+    ?>
+    <?php if($_GET):?>
+        <form action="edit.php" method="GET">
+        <input type='hidden' name="id" value="<?php print $resultado_id['id']; ?>">
+            <p>
+
+            <label for="color">Color</label>
+            <input type="text" name="color" value="<?php print $resultado_id['color']; ?>">
+
+            </p>
+
+            <p>
+
+            <label for="description">descripcion</label>
+            <input type="text" name="description" value="<?php print $resultado_id['description'];?>">
+
+            </p>
+                <p>
+                <button>Añadir</button>
+                </p>
+        </form>
+    <?php endif ?>
+    </table>
+</body>
+</html>
