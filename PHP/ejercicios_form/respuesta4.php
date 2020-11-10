@@ -6,7 +6,7 @@
     $nombre = $_REQUEST['nombre'];
     $apellido = $_REQUEST['apellido'];
 
-
+//PARA INTRODUCIR NOMBRES O COSAS
     if(($nombre == "") && ($apellido == ""))
     {
         print "NO HAS INTRODUCIDO UN NOMBRE.";

@@ -12,9 +12,11 @@
     <h1>CORREO ELECTRONICO</h1>
 <form action="respuesta5.php" method=POST>
 
-<label for="nombre">Nombre</label><input type="text" name="nombre">
+<label for="correoelectronico">Correo electronico</label><input type="text" name="correoelectronico">
 
-<label for="apellido">Apellido</label><input type="text" name="apellido">
+<label for="confimacion">Confirmar correo</label><input type="text" name="confirmar">
+
+<label for="recibir">Recibir correo</label><input type="checkbox" name="recibir">
 
 
 <input type="submit" name="enviar" value ="enviar">
