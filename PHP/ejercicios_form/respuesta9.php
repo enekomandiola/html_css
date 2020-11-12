@@ -1,31 +1,51 @@
+<?php
+/**
+ * Controles en formularios
+ *
+ * @author Kelya
+ *
+ */
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULARIO</title>
+  <meta charset="utf-8">
+  <title>
+    Controles en formularios 
+    Kelya
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mclibre-php-ejercicios.css" title="Color">
 </head>
+
 <body>
-<table>
-    <?php
+  <h1>Ejercicio X</h1>
 
-    $fila=[1,2,3];
-    $columnas=[1,2,3,4];
-    if(isset($_REQUEST['numero'] (is_numeric($_REQUEST['numeric']))))
-    {
-        
+<?php
+
+$numero = trim($_REQUEST['numero']);
+
+
+if($numero<=100 && $numero>=0){
+print "<table>";
+  for ($f=1; $f<=$numero; $f++) {
+    print "<tr>";
+    for ($c=1; $c<=$numero; $c++) {
+      $valor=$c*$f;
+      print "<td> $valor <td>";
     }
-    for ($fila=1; $fila<=$numero; $fila++) {
-        print "<tr>";
-    
+    print "</tr>";
+  }
+print "</table>";
+}else{
+  print"No has puesto un valor válido";
+}
+?>
 
-        for ($columnas=1; $columnas<=$numero; $columnas++) {
-            $valor = $columnas * $filas;
+  <p><a href="form9.php">Volver al formulario.</a></p>
 
-            print "<td>$valor</td>";
-        }
-    }
-    ?>
-</table>
+  <footer>
+    <p>Kelya</p>
+  </footer>
 </body>
 </html>
