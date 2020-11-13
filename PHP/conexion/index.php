@@ -13,7 +13,7 @@
         $descripcion=$_POST["descripcion"];
 
         if ($color != "" and $descripcion != "") {
-            $sql_insert ="INSERT INTO colores(color, descripcion) VALUES (?,?)";
+            $sql_insert ="INSERT INTO colores(color, descripcion) VALUES (?,?)"; //(?) UNO POR VALOR EVITAS EL SQL INJECTION
 
             $sentencia_sql= $gbd->PREPARE($sql_insert);
             $sentencia_sql->execute(array($color,$descripcion));
