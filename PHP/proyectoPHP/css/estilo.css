@@ -1,0 +1,44 @@
+td.bat{ 
+    width: 76%;
+    text-align: center;
+    top: 30%;
+    
+}
+body{
+    background-color: darkgoldenrod;
+}
+
+table{
+    border-collapse: collapse;
+}
+td.lau{
+    background-color: greenyellow;
+}
+
+h3.bat{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+    background-color: khaki;
+    width: 90%;
+    margin: auto;
+}
+
+h3.bi{
+    background-position: center; background-color: burlywood; border-inline-color: initial; 
+    text-align: center;
+    
+}
+
+h3.hiru{
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-decoration: underline;
+}
+
+td.hiru{
+    background-color:darkturquoise; color: black;
+    text-align: right;
+}
+
+
+  
