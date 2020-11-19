@@ -8,6 +8,7 @@ body{
     background-color: darkgoldenrod;
 }
 
+
 table{
     border-collapse: collapse;
 }
@@ -38,6 +39,10 @@ h3.hiru{
 td.hiru{
     background-color:darkturquoise; color: black;
     text-align: right;
+}
+
+td.lau{
+    background-color: greenyellow;
 }
 
 

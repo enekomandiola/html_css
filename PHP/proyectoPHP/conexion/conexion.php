@@ -1,6 +1,6 @@
 <?php
 
-$link = 'mysql:host=localhost;dbname=colores';
+$link = 'mysql:host=localhost;dbname=socios';
 $usuario="root";
 $pwd = "";
 

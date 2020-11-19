@@ -1,20 +1,23 @@
 <?php
 //Leemos los elementos que nos llagan por medio del metodo GET
 $id = $_GET['id'];
+$nombre = $_GET['nombre'];
+$apellido = $_GET['apellido'];
+$edad = $_GET['edad'];
+$correo_electronico = $_GET['correo_electronico'];
 $color = $_GET['color'];
-$descripcion = $_GET['descripcion'];
 
 //Si todavia no se ha dicho la conexion la hacemos
-include_once 'conexion.php';
+include_once '../conexion/conexion.php';
 //UPDATE
-$sql_editar = "UPDATE colores SET color=?, descripcion=? WHERE id=?";
+$sql_editar = "UPDATE socios SET nombre=?,apellido=?,edad=?,correo_electronico=?,color=? WHERE id=?";
 // Como antes, los? evitan el sql injection
 $sentencia_update = $gbd->prepare($sql_editar);
-$sentencia_update->execute(array($color, $descripcion,$id));
+$sentencia_update->execute(array($nombre,$apellido,$edad,$correo_electronico,$color,$id));
 // en el array se pone valores del BBDD update,
 
 
-header("location:index.php");//para que una vez que se ejecute esto 
+header("location:../EL KLUB/SOCIOS_KLUB.php");//para que una vez que se ejecute esto 
 //redirija a esa pagina, para que se cargue
 ?>
 

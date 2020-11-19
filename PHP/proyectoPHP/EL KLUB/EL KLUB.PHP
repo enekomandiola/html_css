@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +14,7 @@
         EL KLUB 
     </h1>
     <div align="center">
-        <img src="Captura.PNG" width="30%">
+        <img src="Captura.PNG" width="20%">
 </div>
     <p>
     <table >
@@ -41,16 +43,20 @@
                 ?>
                 </select>
                 <p>
-                <label for="correoelectronico">Correo electronico</label>
-                <input type="text" name="correoelectronico">
+                <label for="correo_electronico">Correo electronico</label>
+                <input type="text" name="correo_electronico">
+                <p> COLOR FAVORITO </p>
+                <p>
+                <label for="color"></lable>
+                <input type="color" name="color">
                 </p>
                 <input type="submit" name="enviar" value="enviar">
-            <input type="reset" onclick="borrar()" value="borrar">
-                </p>
+                <input type="reset" onclick="borrar()" value="borrar">
+            </p>
+                </form>
     
     </p> 
                 </td>
-
                 <td class="bat">
                     <h3 class="bat" >
                         ElKlub<br>
@@ -80,7 +86,9 @@
             <img src="600px-Instagram-Icon.png"  width="30" height="30" alt="film title">
             <a href="https://www.instagram.com/elklub_ofisial/" >EL KLUB</a>
 </div>
-    
+<p>
+                    <a href="SOCIOS_KLUB.PHP"> <h3>PARA VER SOCIOS</h3></a>
+                </p> 
     <P>
             <table>
                 <TR>
