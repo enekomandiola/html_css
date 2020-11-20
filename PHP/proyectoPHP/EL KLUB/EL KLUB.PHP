@@ -9,15 +9,20 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <title>EL KLUB</title>
 </head>
-<body>    
+
+<body>
+    <div class="">
+        <a class="active" href="SOCIOS_KLUB.PHP"> <h3>PARA VER SOCIOS</h3></a>
+        <a href="EL_KLUB2.HTML"> <H3>MOMASOS</H3> </a>                     
+    </diV>    
     <h1 style="color:black ; background-color:silver" align="center">
         EL KLUB 
     </h1>
     <div align="center">
         <img src="Captura.PNG" width="20%">
 </div>
-    <p>
     <table >
+    <p>
         <tr>
         <h3 class="hiru">PARA HACER SOCIO</h3>
             <td class="lau">

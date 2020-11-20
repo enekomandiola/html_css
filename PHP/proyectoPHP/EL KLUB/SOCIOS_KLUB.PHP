@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <title>SOCIOAS</title>
 </head>
-<body>    
-    <h1 style="color:black ; background-color:silver" align="center">
+<body>
+    <div>
+    <a href="EL_KLUB2.HTML"> <H3>MOMASOS</H3> </a>
+    <a                
+    </div>
+        <h1 style="color:black ; background-color:silver" align="center">
         SOCIOS DE EL KLUB 
 </h1>
 
