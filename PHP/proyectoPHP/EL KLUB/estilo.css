@@ -1,0 +1,113 @@
+td.bat{ 
+    width: 76%;
+    text-align: center;
+    top: 30%;
+    
+}
+body{
+    background-color: darkgoldenrod;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+  
+h1.bat{
+    color:black ;
+    background-color:silver;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+td.lau{
+    background-color: greenyellow;
+}
+
+h3.bat{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+    background-color: khaki;
+    width: 90%;
+    margin: auto;
+}
+
+h3.bi{
+    background-position: center; background-color: burlywood; border-inline-color: initial; 
+    text-align: center;
+    
+}
+
+h3.hiru{
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-decoration: underline;
+}
+
+td.hiru{
+    background-color:darkturquoise; color: black;
+    text-align: right;
+}
+
+td.lau{
+    background-color: greenyellow;
+}
+
+/*ESTILOS DE EL_KLUB2 */
+h1.bi{
+    color:black ; 
+    background-color:silver;
+    text-align: center;
+} 
+
+h2.bi{
+    animation: reverse; 
+    color: darkturquoise;
+    text-align:center;
+}
+
+h1.hiru{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: gold;
+}
+h3.lau{
+    font-family: cursive; 
+    color: darkcyan;
+    text-align: center;
+}
+h3.bost{
+    font-family: cursive; 
+    color: darkcyan;
+    text-align: center;
+}
+/* ESTILOS DEL EL_KLUB3*/
+h1.lau{
+    color:papayawhip ; 
+    background-color:silver; 
+    text-align: center;
+}
+h2.hiru{
+    animation: reverse; 
+    color: darkturquoise;
+    text-align: center;
+}

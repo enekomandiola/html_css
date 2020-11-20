@@ -6,16 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="estilo.css">
     <title>EL KLUB</title>
 </head>
 
+
 <body>
-    <div class="">
-        <a class="active" href="SOCIOS_KLUB.PHP"> <h3>PARA VER SOCIOS</h3></a>
-        <a href="EL_KLUB2.HTML"> <H3>MOMASOS</H3> </a>                     
+    <div class="topnav">
+        <a class="active" href="SOCIOS_KLUB.PHP"> 
+        <h3>PARA VER SOCIOS</h3></a>
+        <a  href="EL_KLUB2.HTML"> 
+        <H3>MOMASOS</H3> </a>                     
     </diV>    
-    <h1 style="color:black ; background-color:silver" align="center">
+    <h1 class="bi">
         EL KLUB 
     </h1>
     <div align="center">
@@ -91,17 +94,5 @@
             <img src="600px-Instagram-Icon.png"  width="30" height="30" alt="film title">
             <a href="https://www.instagram.com/elklub_ofisial/" >EL KLUB</a>
 </div>
-<p>
-                    <a href="SOCIOS_KLUB.PHP"> <h3>PARA VER SOCIOS</h3></a>
-                </p> 
-    <P>
-            <table>
-                <TR>
-                    <td class="hiru">
-                            <a href="EL_KLUB2.HTML"> <H3>MOMASOS</H3> </a>
-                    </td>
-            </table>
-    </P>
-
 </body>
 </html>

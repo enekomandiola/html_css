@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="estilo.css">
     <title>SOCIOAS</title>
 </head>
 <body>
-    <div>
-    <a href="EL_KLUB2.HTML"> <H3>MOMASOS</H3> </a>
-    <a                
-    </div>
+<div class="topnav">
+        <a class="active" href="SOCIOS_KLUB.PHP"> 
+        <h3>PARA VER SOCIOS</h3></a>
+        <a  href="EL_KLUB2.HTML"> 
+        <H3>MOMASOS</H3> </a>
+        <a  href="EL KLUB.PHP"> 
+        <H3>INICIO</H3> </a>
+        <img src="600px-Instagram-Icon.png"  width="30" height="30" alt="film title">
+            <a href="https://www.instagram.com/elklub_ofisial/" >EL KLUB</a>
+                     
+    </diV>
         <h1 style="color:black ; background-color:silver" align="center">
         SOCIOS DE EL KLUB 
 </h1>
-
+<div class="button-container">
+ </div>
 <?php
     include_once '../conexion/conexion.php';
 
@@ -115,22 +123,7 @@
             </audio> -->
         </p>
 
-        <div class="button-container">
-            <img src="600px-Instagram-Icon.png"  width="30" height="30" alt="film title">
-            <a href="https://www.instagram.com/elklub_ofisial/" >EL KLUB</a>
-</div>
-    
-    <P>
-            <table>
-                <TR>
-                    <td class="hiru">
-                            <a href="EL_KLUB2.HTML"> <H3>MOMASOS</H3> </a>
-                    </td>
-                    <td class="lau">
-                        <a href="EL KLUB.php"><h3>INICIO</h3>
-                    </td>   
-            </table>
-    </P>
+
 
 </body>
 </html>
